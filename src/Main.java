@@ -1,10 +1,11 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
         // Первое задание - инициализация массивов
         System.out.println("Первое задание:");
+
         int[] arrayThreeNum = new int[3];
         arrayThreeNum[0] = 1;
         arrayThreeNum[1] = 2;
@@ -29,7 +30,7 @@ public class Main {
 
         for (int i = 0; i < arrayFloat.length; i++) {
             System.out.print(arrayFloat[i]);
-            if (i < arrayThreeNum.length - 1) {
+            if (i < arrayFloat.length - 1) {
                 System.out.print(", ");
             }
         }
@@ -45,6 +46,7 @@ public class Main {
 
         // Третье задание - обратный вывод элементов массивов
         System.out.println("Третье задание:");
+
         for (int i = 0; i < arrayThreeNum.length; i++) {
             System.out.print(arrayThreeNum[arrayThreeNum.length-1-i]);
             if (i < arrayThreeNum.length-1) {
@@ -55,7 +57,7 @@ public class Main {
 
         for (int i = 0; i < arrayFloat.length; i++) {
             System.out.print(arrayFloat[arrayFloat.length-1-i]);
-            if (i < arrayThreeNum.length - 1) {
+            if (i < arrayFloat.length - 1) {
                 System.out.print(", ");
             }
         }
@@ -71,13 +73,13 @@ public class Main {
 
         // Четвертое задание - первый массив делаем "четным", путем добавления 1 к нечетным значениям элементов
         System.out.println("Четвертое задание:");
+
         for (int i = 0; i < arrayThreeNum.length; i++) {
             if (arrayThreeNum[i]%2 == 1) {
                 arrayThreeNum[i]++;
             }
         }
         System.out.println(Arrays.toString(arrayThreeNum));
-        //System.out.println();
 
         System.out.println("~ ~ ~ ~ ~ Конец ~ ~ ~ ~ ~");
     }
