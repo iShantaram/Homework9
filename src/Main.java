@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Первое задание - инициализация массивов
@@ -64,5 +67,18 @@ public class Main {
                 System.out.print(", ");
             }
         }
+        System.out.println();
+
+        // Четвертое задание - первый массив делаем "четным", путем добавления 1 к нечетным значениям элементов
+        System.out.println("Четвертое задание:");
+        for (int i = 0; i < arrayThreeNum.length; i++) {
+            if (arrayThreeNum[i]%2 == 1) {
+                arrayThreeNum[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(arrayThreeNum));
+        //System.out.println();
+
+        System.out.println("~ ~ ~ ~ ~ Конец ~ ~ ~ ~ ~");
     }
 }
